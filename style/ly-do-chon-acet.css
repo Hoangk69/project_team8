@@ -1,0 +1,276 @@
+/* reset sytle */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.img-banner {
+  height: 303px;
+  width: 100%;
+  position: relative;
+}
+
+.img-banner>img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-banner .into-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.img-banner .title-banner-box {
+  width: 650px;
+  height: 90px;
+  border-bottom: 3px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-banner .title-banner-box .title-banner {
+  font-size: 68px;
+  color: #fff;
+}
+
+/* chỉnh sửa mũi tên trong banner */
+.box-arrow {
+  display: flex;
+}
+
+.menu-arr {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.menu-arr>.box-arrow-home .arrow-right-top,
+.menu-arr>.box-arrow-home .arrow-right-down {
+  border-right: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-arr>.box-arrow-home .arrow-right {
+  border-left: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-arr>.box-arrow-home .link-arrow {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* sau khi hover chuột vào home */
+.menu-arr .box-arrow-home:hover .link-arrow {
+  color: yellow;
+}
+
+.menu-arr>.box-arrow-home:hover .arrow-right-top,
+.menu-arr>.box-arrow-home:hover .arrow-right-down {
+  border-right: 10px solid red;
+  cursor: pointer;
+}
+
+.menu-arr>.box-arrow-home:hover .arrow-right {
+  border-left: 10px solid red;
+  cursor: pointer;
+}
+
+.menu-arr>.box-arrow-home:hover .link-arrow {
+  background-color: red;
+}
+
+/* css chung cho arr */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+}
+
+.arrow-right-top {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid red;
+}
+
+.arrow-right-down {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid red;
+}
+
+.link-arrow {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+/* thay đổi con trỏ chuột của arr cuối cùng */
+.menu-arr .box-arrow:last-child .link-arrow {
+  cursor: auto;
+}
+
+/* main nội dung chính */
+.main-center {
+  padding-top: 80px;
+  padding: 80px 145px;
+}
+
+.centered-text {
+  padding: 0px 15px;
+}
+
+.title-english-center {
+  margin-bottom: 30px;
+}
+
+.centered-text p {
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: #333333;
+}
+
+/* list item cơ hội */
+.list-items-co-hoi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-items-co-hoi .item-co-hoi {
+  display: flex;
+  gap: 30px;
+  padding: 35px 15px;
+  border-top: 1px solid black;
+}
+
+.list-items-co-hoi .img-item-co-hoi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.list-items-co-hoi .img-item-co-hoi img {
+  width: 100%;
+}
+
+.list-items-co-hoi .content-item-co-hoi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 3;
+}
+
+.list-items-co-hoi .content-item-co-hoi h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item-co-hoi-center p {
+  color: #333333;
+  line-height: 20px;
+}
+
+.paragraph-stretch {
+  margin-bottom: 20px;
+}
+
+.list-items-co-hoi>.item-co-hoi:last-child {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+/* lộ trình học */
+.contact{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.main-center div:nth-child(3) {
+  margin-top: 15px;
+}
+.img-lo-trinh {
+  width: 100%;
+}
+.form-container{
+  width: 320px;
+  border-radius: 10px;
+  border: 3px solid red;
+}
+.form-container .title-form-sign-up{
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  padding: 10px 30px;
+  font-weight: 700;
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+.form-container .form-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+.form-input input,
+.form-input select{
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  height: 42px;
+  font-size: inherit;
+  margin-bottom: 18px;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.form-input input::placeholder{
+  color: #333333;
+}
+
+.form-input .checkbox-container{
+  display: flex;
+  gap: 5px;
+}
+
+.checkbox-container label{
+  text-align: center;
+  font-size: 13px;
+}
+
+.checkbox-container label:hover{
+  cursor: pointer;
+}
+
+.form-input input:focus{
+  border: 1px solid #ccc;
+}
+
+#bao-mat-checkbox{
+  font-size: .875em;
+}
+
+.width-100{
+  width: 100%;
+}
+
+#submit-form-contact{
+  width: 154px;
+  background-color: red;
+  color: #fff;
+}
