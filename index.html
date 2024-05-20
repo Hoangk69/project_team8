@@ -154,17 +154,20 @@
                     <option value="2">Tp HCM</option>
                     <option value="3">Hà Nội</option>
                 </select>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="bao-mat-checkbox">
-                    <label for="bao-mat-checkbox">Tôi đồng ý các điều khoản và điều kiện bảo mật thông tin của ACET</label>
-                </div>
-                <div class="checkbox-container">    
-                    <input type="checkbox" id="du-hoc-checkbox">
-                    <label for="du-hoc-checkbox">Tôi đồng ý nhận thông tin về du học và IELTS từ IDP Education</label>
+                <div class="group-checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="bao-mat-checkbox">
+                        <label for="bao-mat-checkbox" id="bao-mat-checkbox-label">Tôi đồng ý các điều khoản và điều kiện bảo mật thông tin của ACET</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="du-hoc-checkbox">
+                        <label for="du-hoc-checkbox" id="du-hoc-checkbox-lable">Tôi đồng ý nhận thông tin về du học và IELTS từ IDP Education</label>
+                    </div>
                 </div>
                 <input id="submit-form-contact" type="submit" value="GỬI THÔNG TIN">
             </form>
         </div>
     </div>
+    <script src="./js/ly-do-chon-acet.js"></script>
 </body>
 </html>
